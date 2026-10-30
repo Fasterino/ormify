@@ -1,0 +1,22 @@
+[package]
+name = "ormify_macro"
+version = "1.0.0"
+edition = "2024"
+
+description = "Proc macro crate for ormify"
+license = "MIT"
+
+repository = "https://github.com/Fasterino/ormify/tree/main/proc_macro"
+homepage = "https://github.com/Fasterino/ormify/tree/main/proc_macro"
+readme = "README.md"
+
+[lib]
+proc-macro = true
+
+
+[dependencies]
+convert_case = "0.11.0"
+proc-macro2 = "1.0.106"
+quote = "1.0.40"
+strum = { version = "0.28.0", features = ["derive"] }
+syn = { version = "2.0.106", features = ["full"] }
