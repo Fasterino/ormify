@@ -41,7 +41,7 @@ The core deliberately does not depend on a database client or async runtime.
 
 ```toml
 [dependencies]
-ormify = { version = "1.0.0", features = ["full"] }
+ormify = { version = "1.0.1", features = ["full"] }
 ```
 
 ### Features
