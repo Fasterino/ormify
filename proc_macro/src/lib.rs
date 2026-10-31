@@ -137,6 +137,8 @@ pub fn derive_entity(input: TokenStream) -> TokenStream {
             }
         }
 
+        impl #crate_path :: BaseEntity for #ident {}
+
         #vis mod #util_mod {
             use super::*;
 

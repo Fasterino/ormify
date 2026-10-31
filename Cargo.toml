@@ -1,6 +1,6 @@
 [package]
 name = "ormify"
-version = "1.0.2"
+version = "1.0.3"
 edition = "2024"
 
 description = "Universal ORM Framework for your database."
@@ -21,7 +21,7 @@ proc_macro = ["ormify_macro"]
 bench = ["orm_engine"]
 
 [dependencies]
-ormify_macro = { version = "1.0.1", path = "./proc_macro", optional = true }
+ormify_macro = { version = "1.0.2", path = "./proc_macro", optional = true }
 
 chrono = "0.4.44"
 serde = { version = "1.0.228", features = ["derive"] }
