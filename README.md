@@ -15,7 +15,10 @@
 
 `ormify` is a backend-agnostic, asynchronous ORM core for Rust. It generates entity metadata and typed query builders, then delegates SQL dialect compilation and database I/O to a separate backend crate.
 
-The PostgreSQL implementation is available in [`ormify_postgres`](https://github.com/Fasterino/ormify_postgres).
+Two implementations are currently available:
+[`ormify_postgres`](https://github.com/Fasterino/ormify_postgres).
+and
+[`ormify_sqlite`](https://github.com/Fasterino/ormify_sqlite).
 
 ## Architecture
 
@@ -41,7 +44,7 @@ The core deliberately does not depend on a database client or async runtime.
 
 ```toml
 [dependencies]
-ormify = { version = "1.0.1", features = ["full"] }
+ormify = { version = "1.0.2", features = ["full"] }
 ```
 
 ### Features
